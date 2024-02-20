@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gfi1
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0034-tenant/tkrw-pr712-0075-0034-app/devfile-sample-gfi1@sha256:9585c64ef162835a8767e3410958ef5a6997cded2f4efaf308301d784ba8f2ff
+        name: my-nodejs
+        resources: {}
+status: {}
